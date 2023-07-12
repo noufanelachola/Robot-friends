@@ -3,15 +3,15 @@ import Card from'./Card';
 
 
 
-const CardList = ({Robots})=>{
+const CardList = ({robots})=>{
 
-    const CardArray = Robots.map((user,i)=>{
+    const CardArray = robots.map((user,i)=>{
         return( 
             <Card 
                 key={i} 
-                id={Robots[i].id} 
-                name={Robots[i].name} 
-                email={Robots[i].email}
+                id={robots[i].id} 
+                name={robots[i].name} 
+                email={robots[i].email}
             />
         );     
     });
